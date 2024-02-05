@@ -1,0 +1,178 @@
+ex1:
+code:
+#include <stdio.h>
+#include <string.h>
+
+int main(){
+	FILE *f;
+	f=fopen("texte.txt","r");
+	
+	//if(f==NULL)	{printf("le fichier n'a pas pu être ouvert");return 0;}
+	int car;
+	while(!feof(f)){
+		car=fgetc(f);
+		if(31<car && car<236)
+			printf("%d={%c}\n", car, car);
+	}
+	fclose(f);
+
+	return 0;
+}
+
+terminal:
+106={j}
+101={e}
+114={r}
+101={e}
+109={m}
+121={y}
+32={ }
+121={y}
+117={u}
+115={s}
+117={u}
+102={f}
+107={k}
+97={a}
+112={p}
+108={l}
+97={a}
+110={n}
+32={ }
+106={j}
+117={u}
+108={l}
+105={i}
+101={e}
+110={n}
+32={ }
+97={a}
+114={r}
+97={a}
+98={b}
+32={ }
+112={p}
+117={u}
+108={l}
+105={i}
+101={e}
+110={n}
+32={ }
+32={ }
+104={h}
+101={e}
+108={l}
+108={l}
+111={o}
+32={ }
+119={w}
+111={o}
+114={r}
+108={l}
+100={d}
+32={ }
+116={t}
+112={p}
+55={7}
+32={ }
+101={e}
+120={x}
+101={e}
+114={r}
+99={c}
+105={i}
+99={c}
+101={e}
+32={ }
+100={d}
+101={e}
+117={u}
+120={x}
+
+ex2:
+code:
+#include <stdio.h>
+#include <string.h>
+
+int main(){
+	FILE *f, *fc;
+	f=fopen("texte.txt","r");
+	fc=fopen("copie.txt","w+");
+	
+	//if(f==NULL)	{printf("le fichier n'a pas pu être ouvert");return 0;}
+
+	while(!feof(f))
+		fputc(fgetc(f), fc);
+	fclose(f);
+
+	return 0;
+}
+
+terminal:
+texte.txt:
+jeremy yusuf
+kaplan julien arab pulien  hello world tp7 exercice deux
+copie.txt:
+jeremy yusuf
+kaplan julien arab pulien  hello world tp7 exercice deux
+
+ex3:
+code:
+#include <stdio.h>
+#include <string.h>
+
+int main(){
+	FILE *f, *fc;
+	f=fopen("texte.txt","r");
+	fc=fopen("copie.txt","w+");
+	
+	//if(f==NULL)	{printf("le fichier n'a pas pu être ouvert");return 0;}
+	int car=0;
+	while(!feof(f)){
+		car=fgetc(f);
+		if(32<car && car<236)
+			fputc((char)(car), fc);
+	}	
+	fclose(f);
+
+	return 0;
+}
+
+terminal:
+texte.txt:
+jeremy yusuf
+kaplan julien arab pulien  hello world tp7 exercice deux
+copie.txt:
+jeremyyusufkaplanjulienarabpulienhelloworldtp7exercicedeux
+ex4:
+code:
+#include <stdio.h>
+#include <string.h>
+
+int main(){
+	FILE *f, *fc;
+	f=fopen("texte.txt","r");
+	fc=fopen("copie.txt","w+");
+	
+	//if(f==NULL)	{printf("le fichier n'a pas pu être ouvert");return 0;}
+	int car=0;
+
+	while(!feof(f)){
+		car=fgetc(f);
+		if(32<car && car<236){
+			fputc((char)(~car), fc);
+		}
+	}	
+	fclose(f);
+
+	return 0;
+}
+
+terminal:
+
+
+
+
+
+
+
