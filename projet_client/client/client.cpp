@@ -7,8 +7,9 @@
 #include <stdlib.h>
 #include <string.h>
 #include "Winsock.h"
+#define CROSSROADS_NUMBER 10
 
-char ad[16], buffer[256];
+char ad[16] = "147.215.184.72", buffer[256];
 char val;
 int err, So, lon;
 struct sockaddr_in machine;
@@ -38,8 +39,8 @@ int main()
 
 	//votre code commence Ã  partir de ce point
 
-	printf("Adresse du serveur : ");
-	scanf_s("%16s", ad, (unsigned)_countof(ad));
+	//printf("Adresse du serveur : ");
+	//scanf_s("%16s", ad, (unsigned)_countof(ad));
 
 	So = socket(AF_INET, SOCK_DGRAM, 0);
 

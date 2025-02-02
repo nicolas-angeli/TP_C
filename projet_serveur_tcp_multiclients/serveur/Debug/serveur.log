@@ -1,0 +1,8 @@
+﻿  serveur.cpp
+D:\IA6_Reseaux_Cyber\Tp_réseau_udp_tcp\projet_serveur_tcp_multiclients\serveur\serveur.cpp(38,9): warning C4101: 'dwThreadID': unreferenced local variable
+  (compiling source file '/serveur.cpp')
+  
+D:\IA6_Reseaux_Cyber\Tp_réseau_udp_tcp\projet_serveur_tcp_multiclients\serveur\serveur.cpp(86,8): warning C4101: 'dwThreadID': unreferenced local variable
+  (compiling source file '/serveur.cpp')
+  
+  serveur.vcxproj -> D:\IA6_Reseaux_Cyber\Tp_réseau_udp_tcp\projet_serveur_tcp_multiclients\Debug\serveur.exe

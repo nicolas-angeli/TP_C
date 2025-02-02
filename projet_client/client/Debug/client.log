@@ -1,2 +1,3 @@
-﻿  client.cpp
-  client.vcxproj -> D:\IA6_Cyber\Tp_réseau_udp_tcp\Tp_réseau_udp_tcp\projet_client\Debug\client.exe
+﻿  pch.cpp
+  client.cpp
+  client.vcxproj -> D:\IA6_Reseaux_Cyber\tp_carrefour_FE\projet_client\Debug\client.exe

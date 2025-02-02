@@ -2,7 +2,7 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>D:\IA6_Reseaux_Cyber\tp_carrefour_FE\projet_client\Debug\client.exe</FullPath>
+      <FullPath>D:\IA6_Reseaux_Cyber\Tp_réseau_udp_tcp\projet_serveur_tcp_multiclients\Debug\serveur.exe</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />
